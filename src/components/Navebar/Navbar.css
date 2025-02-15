@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 26px 12px;
+  box-shadow: rgba(0, 55, 255, 0.317) 0px 14px 28px,
+    rgba(56, 12, 177, 0.324) 0px 10px 10px;
+}
