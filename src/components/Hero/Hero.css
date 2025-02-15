@@ -13,7 +13,12 @@
   height: 372px;
   box-shadow: rgba(46, 4, 181, 0.19) 0px 10px 20px,
     rgba(57, 7, 164, 0.315) 0px 6px 6px;
+  cursor: pointer;
   border-radius: 4px;
+}
+#hero .mini-box:hover {
+  transform: scale(1.06);
+  transition: 1s all ease;
 }
 #hero .mini-box .text {
   padding: 12px 16px;

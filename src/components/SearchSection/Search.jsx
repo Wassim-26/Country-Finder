@@ -1,10 +1,14 @@
 import React from "react";
 import "./Search.css";
+import Icon from "../Icon/icon";
 export default function Search() {
   return (
-    <section id="search">
-      <input type="search" placeholder="search for contry"></input>
-      <div className="filtre">Filtre by Region</div>
+    <section id="mini-section">
+      <div className="search">
+        <Icon />
+        <input type="search" placeholder="Search for contry..."></input>
+      </div>
+      <div className="filtre"> Filtre by Region</div>
     </section>
   );
 }
