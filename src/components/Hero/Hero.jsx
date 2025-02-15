@@ -91,90 +91,15 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="box-container">
-        <CountryItem
-          name="Algeria"
-          population="44,700,000"
-          region="Africa"
-          capital="Algiers"
-          flag="https://flagcdn.com/dz.svg"
-        />
-        <CountryItem
-          name="France"
-          population="67,391,582"
-          region="Europe"
-          capital="Paris"
-          flag="https://flagcdn.com/fr.svg"
-        />
-        <CountryItem
-          name="Canada"
-          population="  38,005,238"
-          region="Americas"
-          capital="Ottawa"
-          flag="https://flagcdn.com/ca.svg"
-        />
-        <CountryItem
-          name="Belgium"
-          population="  11,555,997"
-          region=" Europe"
-          capital="Brussels"
-          flag="https://flagcdn.com/be.svg"
-        />
-        <CountryItem
-          name="Switzerland"
-          population="8,636,896"
-          region="Europe"
-          capital="Bern"
-          flag="https://flagcdn.com/ch.svg"
-        />
-        <CountryItem
-          name="Greece"
-          population="  10,715,549"
-          region="Europe"
-          capital="Athens"
-          flag="https://flagcdn.com/gr.svg"
-        />
-        <CountryItem
-          name="Germany"
-          population="  83,240,525"
-          region="Europe"
-          capital="Berlin"
-          flag="https://flagcdn.com/de.svg"
-        />
-        <CountryItem
-          name="Netherlands"
-          population="17,441,139"
-          region="Europe"
-          capital="Amsterdam"
-          flag="https://flagcdn.com/nl.svg"
-        />
-        <CountryItem
-          name="Italy"
-          population="59,554,023"
-          region="Europe"
-          capital=" Rome"
-          flag="https://flagcdn.com/it.svg"
-        />
-        <CountryItem
-          name="Luxembourg"
-          population=" 632,275"
-          region="Europe"
-          capital="Luxembourg"
-          flag="https://flagcdn.com/lu.svg"
-        />
-        <CountryItem
-          name="Sweden"
-          population="  10,353,442"
-          region="Europe"
-          capital=" Stockholm"
-          flag="https://flagcdn.com/se.svg"
-        />
-        <CountryItem
-          name="Finland"
-          population="  5,530,719"
-          region="Europe"
-          capital="Helsinki"
-          flag="https://flagcdn.com/fi.svg"
-        />
+        {countries.map((country) => (
+          <CountryItem
+            name={country.name}
+            population={country.population}
+            region={country.region}
+            capital={country.capital}
+            flag={country.flag}
+          />
+        ))}
       </div>
     </section>
   );
