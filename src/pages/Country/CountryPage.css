@@ -1,0 +1,23 @@
+.contry-information-container {
+  display: flex;
+  padding: 42px 0;
+}
+.right {
+  margin: 0 76px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right > .button-container > button {
+  border: none;
+  box-shadow: rgba(46, 4, 181, 0.19) 0px 10px 20px,
+    rgba(57, 7, 164, 0.315) 0px 6px 6px;
+  border-radius: 4px;
+  padding: 12px;
+  width: 120px;
+  height: 32px;
+  margin: 26px;
+}
+.left {
+  margin: 0 76px;
+}
