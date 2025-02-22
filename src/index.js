@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/country",
+    path: "/country/:name",
     element: <Country />,
   },
 ]);

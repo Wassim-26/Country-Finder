@@ -1,7 +1,8 @@
 import React from "react";
 import "./CountryPage.css";
-import { Link } from "react-router";
+import { Link, useParams } from "react-router";
 export default function CountryPage() {
+  const params = useParams();
   return (
     <div className="country-info-container">
       <Link to="/" className="btn-back">
@@ -26,7 +27,7 @@ export default function CountryPage() {
           <img src="https://flagcdn.com/dz.svg" width={460} height={310} />
         </div>
         <div className="left">
-          <h1>Algeria</h1>
+          <h1>{params.name}</h1>
           <div className="information-container">
             <div className="info-right">
               <p>
