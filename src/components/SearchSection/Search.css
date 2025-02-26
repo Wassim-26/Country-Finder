@@ -26,3 +26,12 @@
   box-shadow: rgba(9, 9, 137, 0.25) 0px 13px 27px -5px,
     rgba(32, 4, 123, 0.283) 0px 8px 16px -8px;
 }
+#mini-section .filtre p {
+  padding: 8px;
+  color: gray;
+}
+#mini-section .filtre p:hover {
+  cursor: pointer;
+  color: black;
+  transition: 1s all;
+}

@@ -8,7 +8,16 @@ export default function Search() {
         <Icon />
         <input type="search" placeholder="Search for contry..."></input>
       </div>
-      <div className="filtre"> Filtre by Region</div>
+      <details className="filtre">
+        <summary>Filtre by Region</summary>
+        <p>All</p>
+        <p>Africa</p>
+        <p>Americas</p>
+        <p>Asia</p>
+        <p>Europe</p>
+        <p>Oceania</p>
+        <p>Polar</p>
+      </details>
     </section>
   );
 }
